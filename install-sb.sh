@@ -3,10 +3,10 @@ git pull >> /dev/null
 chmod 777 -R *
 chmod 777 -R .
 #Sysupdate
-apt-get update -qq >> /dev/null
+apk update -qq >> /dev/null
 #apt full-upgrade 
 #req
-apt install python2 python tor perl figlet runit openssl -y >> /dev/null
+apt get python2 python tor perl figlet runit openssl -y >> /dev/null
 clear
 sleep 2
 figlet Installing ...
@@ -35,7 +35,7 @@ figlet instagram bf1
 cd instainsane
 chmod +x instainsane.sh
 chmod +x install.sh
-./install.sh
+bash install.sh
 cd ..
 sleep 2
 clear
@@ -46,7 +46,7 @@ figlet twitter bf
 cd tweetshell
 chmod +x tweetshell.sh
 chmod +x install.sh
-./install.sh
+bash install.sh
 cd ..
 clear
 figlet Installing ...
@@ -54,6 +54,6 @@ figlet instagram bf 2
 # instagram 2
 git clone https://github.com/samsesh/insta-bf.git
 cd insta-bf 
-bash ./andriod_setup.sh	>> /dev/null
+bash andriod_setup.sh	>> /dev/null
 clear
 figlet done
